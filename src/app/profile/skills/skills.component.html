@@ -1,0 +1,32 @@
+<div class="section" id="skill">
+    <div class="container">
+        <div class="h4 text-center mb-4 title">Skills</div>
+        <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-2" *ngFor="let skill of skills">
+                        <div class="progress-container progress-primary" width="fit-content">
+                        <div style="text-align: center ;width: fit-content;">
+                            <div style="background: #00334d38;
+                            border-radius: 50px;
+                            width: 100px;
+                            height: 100px;
+                            display: flex;
+                            align-items: center;">
+                            
+                            <img src="{{skill.icon}}" width="70" height="70" style="margin-right: auto;
+                            margin-left: auto;">
+                            </div>
+                            <span class="progress-badge" style="font-weight: bold;">{{skill.skill}}</span>
+                        </div>
+                            <!-- <div class="progress">
+                                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{skill.icon}}"></div>
+                                <span class="progress-value">{{skill.icon}}</span>
+                            </div> -->
+                        </div>
+                    </div>
+                    </div>
+          
+            </div>
+        </div>
+    </div>
